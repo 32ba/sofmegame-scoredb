@@ -2,3 +2,4 @@ sqlalchemy
 fastapi
 uvicorn
 psycopg2
+gunicorn
