@@ -3,8 +3,8 @@ from sqlalchemy.ext.declarative import declarative_base
 import os
 
 
-SQLALCHEMY_DATABASE_URI = "sqlite:///./test.db"
-#SQLALCHEMY_DATABASE_URI = os.environ["SQL_URL"]
+#SQLALCHEMY_DATABASE_URI = "sqlite:///./test.db"
+SQLALCHEMY_DATABASE_URI = os.environ["SQL_URL"]
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URI, connect_args={"check_same_thread": False}, echo=True
