@@ -1,0 +1,4 @@
+*.pyc
+.vscode/*
+main_dev.py
+.DS_Store
