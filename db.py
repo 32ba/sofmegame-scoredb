@@ -7,7 +7,7 @@ import os
 SQLALCHEMY_DATABASE_URI = os.environ["SQL_URL"]
 
 engine = create_engine(
-    SQLALCHEMY_DATABASE_URI, connect_args={"check_same_thread": False}, echo=True
+    SQLALCHEMY_DATABASE_URI, echo=True
 )
 
 Base = declarative_base()
